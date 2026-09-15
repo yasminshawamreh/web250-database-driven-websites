@@ -13,11 +13,12 @@ class Bird {
     public static $egg_num = 0;
 
     public static function create() {
+        self::$instance_count++;
         return new Bird();
     }
 
     function can_fly() {
-        return (static::$flying == "yes") ? "bird can fly" : "cannot fly and it is stuck on the ground";
+        return (static::$flying == "yes") ? "bird can fly" : "is stuck on the ground";
     }
 }
 
