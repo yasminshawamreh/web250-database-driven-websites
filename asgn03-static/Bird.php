@@ -6,15 +6,18 @@ class Bird {
     var $nesting = "tree";
     var $conservation;
     var $song = "chirp";
-    var $flying = "yes";
+
+    public static $flying = "yes";
+
+    public static $instance_count = 0;
+    public static $egg_num = 0;
+
+    public static function create() {
+        return new Bird();
+    }
 
     function can_fly() {
-        if ( $this->flying == "yes" ) {
-            $flying_string = "can fly";
-        } else {
-            $flying_string = "is stuck on the ground";
-        }
-        return  $flying_string ;
+        return (static::$flying == "yes") ? "bird can fly" : "cannot fly and it is stuck on the ground";
     }
 }
 
@@ -22,12 +25,15 @@ class YellowBelliedFlyCatcher extends Bird {
     var $name = "yellow-bellied flycatcher";
     var $diet = "mostly insects.";
     var $song = "flat chilk";
+
+    public static $egg_num = "3-4, sometimes 5.";
 }
 
 class Kiwi extends Bird {
     var $name = "kiwi";
     var $diet = "omnivorous";
-    var $flying = "no";
+    
+    public static $flying = "no";
 }
 
 ?>
