@@ -1,5 +1,6 @@
 <?php
-
+    error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
+    ini_set('display_errors', 1);
   ob_start(); // turn on output buffering
 
   // session_start(); // turn on sessions if needed
