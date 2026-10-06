@@ -14,49 +14,55 @@ This project demonstrates PHP object-oriented programming using bicycle and bird
 
 ## Bike Challenge
 
-Briefly describe the bicycle portion of the assignment here.
+The Bike Challenge uses a Bicycle class to represent bicycle inventory from a CSV file. It demonstrates properties, constants, constructors, getters and setters, methods, CSV parsing, and escaped output.
 
 ## Bird Challenge
 
-Briefly describe the bird portion of the assignment here.
+The Bird Challenge uses a Bird class to represent bird data from a CSV file. It demonstrates properties, constants, constructors, getters and setters, unit conversions, a conservation lookup, size classification, a static object counter, and static methods.
 
 ## Go Further Choices
 
-1. Choice:
+1. Static Finder
 
-2. Choice:
+2. `__toString()`
 
 ## Concept Check
 
 ### 1. Static Property vs Constant
 
-Answer here.
+A static property can change while the program is running, while a constant cannot be changed after it is defined. `Bird::$count` is a static property because it needs to increase each time a Bird object is created.
 
 ### 2. Constructor `$args` Array
 
-Answer here.
+Using one `$args` array keeps the constructor connected to the CSV column names instead of depending on the order of separate parameters. If the CSV columns are reordered, the values can still be assigned using their column names.
 
 ### 3. Public vs Protected
 
-Answer here.
+Public properties can be accessed directly from outside the class. Protected properties can only be accessed inside the class or by classes that inherit from it. Measurements and coded IDs are protected so the class can control how those values are stored and displayed.
 
 ### 4. Private `reset()`
 
-Answer here.
+A private `reset()` method can only be called from inside the class. This keeps an internal operation from being called directly by code outside the class.
 
 ### 5. `self::CONSERVATION_OPTIONS`
 
-Answer here.
+`self::` is used because `CONSERVATION_OPTIONS` is a class constant, not an object property. The constant belongs to the Bird class itself, so it is accessed through the class rather than through `$this`.
 
 ### 6. `money_format()` vs `number_format()`
 
-Answer here.
+`money_format()` was designed for currency formatting and is not available in modern PHP versions. `number_format()` is used to format numbers and works for displaying the bird measurements with the required decimal places and unit labels.
 
 ## Git History
 
-This section will be completed at the end.
+e95fd15 (HEAD -> asgn05-bird, origin/asgn05-bird) asgn05-bird: add bird string representation
+8ff6a37 asgn05-bird: clarify size class documentation
+4bd0ed2 asgn05-bird: document constructor design
+5b00ce3 (origin/main, main) asgn05-bird: complete bird challenge
+fdafe01 (origin/asgn05-bike, asgn05-bike) asgn05-bike: complete inventory display and escaping
+142d3c8 asgn05-bike: connect ParseCSV to inventory page
+b7c0a76 asgn05-bike: complete Bicycle properties and constructor
+2666faa asgn05-bike: add starter inventory page
 
 ## AI Log
 
-- Question asked:
-- How the answer was used:
+I used AI for guidance, code review, and troubleshooting while completing this assignment. I used it to help me understand PHP OOP concepts, check assignment requirements, and troubleshoot errors. I reviewed and tested the suggestions myself and made the final decisions about my code.
