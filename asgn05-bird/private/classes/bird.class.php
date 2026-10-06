@@ -271,8 +271,8 @@ public function conservation() {
    * your comment and say why they suit this data.
    */
 // Small: under 40 cm, Medium: 40–80 cm, Large: over 80 cm.
-// These cutoffs work with this dataset because the birds range from about 11 cm to 130 cm
-// and create useful groups across the range.
+// The comparisons are based on the bird's stored wingspan in centimeters.
+// These ranges create useful size groups across the birds in this dataset.
 public function size_class() {
     if($this->wingspan_cm < 40) {
       return 'Small';
