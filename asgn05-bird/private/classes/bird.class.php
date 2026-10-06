@@ -157,6 +157,9 @@ protected const CONSERVATION_OPTIONS = [
    * why comment required: why one $args array instead of a parameter for each
    * column? What happens if someone reorders the columns in the CSV?
    */
+
+// One array keeps the constructor tied to CSV column names instead of parameter order.
+// This means reordering the CSV columns will not silently assign values to the wrong properties.
   public function __construct($args = []) {
 
     $this->common_name = $args['common_name'] ?? '';
