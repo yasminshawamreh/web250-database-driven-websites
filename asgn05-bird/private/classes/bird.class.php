@@ -310,6 +310,13 @@ public function display_name() {
 }
 
 
+// __toString() lets a Bird object be used directly where a string is expected.
+// This keeps the string representation consistent with display_name().
+public function __toString() {
+    return $this->display_name();
+  }
+
+
 }
 
 ?>
