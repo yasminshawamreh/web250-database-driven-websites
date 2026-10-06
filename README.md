@@ -54,14 +54,27 @@ A private `reset()` method can only be called from inside the class. This keeps 
 
 ## Git History
 
-e95fd15 (HEAD -> asgn05-bird, origin/asgn05-bird) asgn05-bird: add bird string representation
-8ff6a37 asgn05-bird: clarify size class documentation
-4bd0ed2 asgn05-bird: document constructor design
-5b00ce3 (origin/main, main) asgn05-bird: complete bird challenge
-fdafe01 (origin/asgn05-bike, asgn05-bike) asgn05-bike: complete inventory display and escaping
-142d3c8 asgn05-bike: connect ParseCSV to inventory page
-b7c0a76 asgn05-bike: complete Bicycle properties and constructor
-2666faa asgn05-bike: add starter inventory page
+```text
+* 0ee6085 (HEAD -> main, origin/main, origin/asgn05-bird, asgn05-bird) asgn05-bird: complete README
+* e95fd15 asgn05-bird: add bird string representation
+* 8ff6a37 asgn05-bird: clarify size class documentation
+* 4bd0ed2 asgn05-bird: document constructor design
+* 5b00ce3 asgn05-bird: complete bird challenge
+* fdafe01 (origin/asgn05-bike, asgn05-bike) asgn05-bike: complete inventory display and escaping
+* 142d3c8 asgn05-bike: connect ParseCSV to inventory page
+* b7c0a76 asgn05-bike: complete Bicycle properties and constructor
+* 2666faa asgn05-bike: add starter inventory page
+* 27ff9f8 (origin/asgn04-constructor, asgn04-constructor) Complete autoload exercise
+* 3963543 Complete asgn04 constructors
+* 864dbd2 Starting asgn04-constructors
+* 87a373f Merge asgn03-static into main
+* 35549e4 (origin/asgn03-static, asgn03-static) Complete asgn03-static
+* 6eb1ce0 Complete static properties and methods
+* abccf30 Add asgn03-static starter files
+* bf39fa2 Merge branch 'main' of https://github.com/yasminshawamreh/web250-database-driven-websites
+|\
+| * 10f3214 bird-challenge.php
+```
 
 ## AI Log
 
