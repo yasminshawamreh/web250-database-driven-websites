@@ -13,7 +13,7 @@ This README documents my observations while using VS Code and Xdebug to debug PH
 - Mac/MAMP FastCGI `-idle-timeout 600` configured? No. The existing directive was not found in my MAMP Apache configuration.
 - Mac/MAMP 45-second breakpoint test: Passed. I waited 45 seconds at a breakpoint, then successfully used Step Over and Continue without an HTTP 500 error.
 - Local exercise index URL: `http://localhost:55000/web250/debugging_setup/index.php`
-- Hosted exercise index URL: Not uploaded yet.
+- Hosted exercise index URL: https://yshawamreh.com/web250/debugging_setup/index.php
 
 ## Exercise 01 — Variables and Watch
 
