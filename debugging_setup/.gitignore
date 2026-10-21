@@ -1,0 +1,4 @@
+# Local-only diagnostics and OS files — never commit or upload
+_local_phpinfo.php
+.DS_Store
+*.log
