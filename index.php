@@ -62,6 +62,12 @@
                 Assignment 08 - Active Record Directory
             </a>
         </li>
+        
+        <li>
+            <a href="asgn09/public/birds.php">
+            Assignment 09 - Create a Record
+            </a>
+        </li>
 
         <li>
             <a href="debugging_setup/index.php">
