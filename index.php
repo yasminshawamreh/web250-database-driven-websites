@@ -70,6 +70,12 @@
         </li>
 
         <li>
+            <a href="asgn10/public/birds.php">
+            Assignment 10 - Update & Delete
+            </a>
+        </li>
+
+        <li>
             <a href="debugging_setup/index.php">
                 Debugging Setup
             </a>
