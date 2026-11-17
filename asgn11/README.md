@@ -142,6 +142,24 @@ I also created a temporary test bird, updated its information, and deleted it to
 
 These tests confirmed that the new member permissions did not prevent logged-in users from using the existing Bird application.
 
+## Bluehost Hosting and Testing
+
+I uploaded Assignment 11 to Bluehost and configured the application to use my hosted MySQL database.
+
+I created a separate `.env` file on Bluehost with the correct database settings. I also uploaded the Composer dependencies so the application could load the required packages.
+
+During testing, I found that the hosted database was missing the `members` table. I used phpMyAdmin to create the table and then tested registration again.
+
+After fixing the database issue, I successfully registered a member account and logged in.
+
+I confirmed that the Bird Directory displayed the logged-in username along with the Create, Update, Delete, and Logout options.
+
+I also created a temporary bird, updated it, checked the changes, and deleted it.
+
+After logging out, I confirmed that the Create, Update, and Delete links disappeared. I also tried opening the Create Bird page directly while logged out and was redirected to the Login page.
+
+These tests confirmed that the application worked on Bluehost and that the member permissions were working correctly.
+
 ## Git Branch Workflow
 
 I created the `dev-users-login` branch to work on Assignment 11 separately from the completed assignments.
@@ -150,7 +168,9 @@ I copied the previous Bird application into a new `asgn11` folder and added the 
 
 I used `.gitignore` to keep private credentials and installed dependencies out of the repository.
 
-After completing the application and documentation, the remaining Git steps are to commit the changes, push the development branch, merge it into `main`, and push the updated main branch to GitHub.
+After completing the application and documentation, I committed my changes to the `dev-users-login` branch and pushed the branch to GitHub.
+
+I then switched to `main`, merged the development branch, and pushed the updated main branch to GitHub.
 
 ## Running the Application Locally
 
@@ -160,7 +180,7 @@ After completing the application and documentation, the remaining Git steps are 
 4. Open a terminal inside the `asgn11` folder.
 5. Run `composer install` to install the required dependencies.
 6. Copy `.env.example` to `.env` and enter the local database settings.
-7. Open `http://localhost:8888/web250/asgn11/public/birds.php` in a browser.
+7. Open http://localhost:8888/web250/asgn11/public/birds.php in a browser.
 8. Register for an account or log in using an existing member account.
 9. Use the Bird Directory to view records and, when logged in, create, update, or delete birds.
 
@@ -184,4 +204,4 @@ The following screenshots can be used to document the Assignment 11 features:
 
 **Hosted Assignment 11:** https://yshawamreh.com/web250/asgn11/public/birds.php
 
-The Assignment 11 GitHub and hosted links will be verified after deployment.
+I successfully uploaded Assignment 11 to Bluehost and tested the hosted application. The completed code is also available on GitHub's `main` branch.
