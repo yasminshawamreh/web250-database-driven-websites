@@ -1,0 +1,6 @@
+private/db_credentials.php
+.DS_Store
+.env
+/vendor/
+/composer.phar
+!.env.example
